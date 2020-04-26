@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<%= gravatar_for @user %> 
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Created_at:</strong>
+  <%= @user.created_at %>
+</p>
+
+<p>
+  <strong>Updated_at:</strong>
+  <%= @user.updated_at %>
+</p>
+<p>
+<%= Time.now %>
+</p>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
